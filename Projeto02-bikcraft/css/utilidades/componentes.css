@@ -14,10 +14,20 @@
   text-transform: uppercase;
   color: var(--cor-p5);
   font: 600 1.8rem/1.35 'Poppins', sans-serif;
+  width: max-content;
 }
 
 .botao:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+
+.botao.secundario {
+  background: var(--cor-10);
+  color: var(--cor-2);
+}
+
+.botao.secundario:hover {
+  background: var(--cor-9);
 }
 
 @media (max-width: 600px) {
@@ -45,4 +55,26 @@
 
 .link:hover {
   color: var(--cor-0);
+}
+
+/* Títulos das páginas internas */
+.titulo-bg {
+  padding-block: 60px;
+  background-color: var(--cor-11);
+}
+
+.titulo p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .titulo-bg {
+    padding-block: 40px;
+  }
+
+  .titulo p {
+    font-size: 1.6rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
 }
