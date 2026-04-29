@@ -202,6 +202,12 @@ img {
   align-self: end;
 }
 
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: auto;
+  }
+}
+
 /* estilos content */
 p {
   font-size: 1.2em;
@@ -311,6 +317,7 @@ p {
   align-content: start;
   padding: 30px;
   gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 /* FOOTER */
